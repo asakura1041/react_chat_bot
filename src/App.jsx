@@ -68,7 +68,7 @@ export default class App extends React.Component {
       scrollArea.scrollTop = scrollArea.scrollHeight;
     }
   }
-
+  
   render (){
     return (
       <section className="c-section">
