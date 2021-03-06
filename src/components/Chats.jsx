@@ -19,10 +19,10 @@ const Chats = (props) => {
 
   return(
     <List className={classes.root}>
-      <Chat />
-      <Chat />
-      <Chat />
-      <Chat />
+      {props.chats.map((chat, index) => {
+        // console.log(chat)
+        return <Chat text={chat.text} type={chat.type} key={index.toString()}/>
+      })}
     </List>
   )
 }
